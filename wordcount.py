@@ -41,8 +41,7 @@ def word_count(file):
         words = line.split(' ')
         for word in words:
             new_dict[word] = new_dict.get(word, 0) + 1
-            if word == " ":
-                continue
     
     for word, number in new_dict.items():
         print(f'{word} {number}')
+
